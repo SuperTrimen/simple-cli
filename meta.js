@@ -116,7 +116,7 @@ export default {
   }
 </style>
 `
-        const pluginContent = `const plugin = {
+        const pluginContent = `const VuePlugin = {
   install: (Vue, options) => {
     // 1. 添加全局方法或属性
     Vue.myGlobalMethod = function () {
@@ -145,7 +145,7 @@ export default {
     }
   }
 }
-export default plugin
+export default VuePlugin
 `
         fs.writeFile(file, data.cliType === 'component' ? componentContent : pluginContent, err => {
             if (err) throw err
