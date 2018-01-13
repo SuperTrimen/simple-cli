@@ -9,7 +9,7 @@
 <script>
 {{#if_eq cliType 'component'}}import VueComponent from './lib/'{{/if_eq}}
 export default {
-  name: 'app'{#if_eq cliType 'component'},
+  name: 'app'{{#if_eq cliType 'component'}},
   components: {
     VueComponent
   }
