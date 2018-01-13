@@ -28,7 +28,7 @@ export default {
 {{/if_eq}}
 {{#if_eq cliType 'plugin'}}
 import Vue from 'vue'
-import VuePlugin from '{{#if_eq componentType 'project'}}@{{ port }}/{{/if_eq}}{{#unless_eq componentType 'project'}}@strongsoft/{{/unless_eq}}{{ name }}'
+import VuePlugin from '{{#if_eq scope 'project'}}@{{ port }}/{{/if_eq}}{{#if_eq scope 'common'}}@strongsoft/{{/if_eq}}{{ name }}'
 
 Vue.use(VuePlugin)
 // 或者，你也可以传入可选参数
