@@ -89,7 +89,7 @@ module.exports = {
         )
         const componentContent = `<template>
   <div class='${data.name}'>
-    开启你的组件开发之旅！
+    请开启你的组件开发之旅！
   </div>
 </template>
 

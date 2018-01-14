@@ -3,6 +3,9 @@
     {{#if_eq cliType 'component'}}
     <VueComponent/>
     {{/if_eq}}
+    {{#if_eq cliType 'plugin'}}
+    请开启你的插件开发之旅！
+    {{/if_eq}}
   </div>
 </template>
 
