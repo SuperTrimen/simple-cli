@@ -1,4 +1,4 @@
-# Simple-Cli
+# simple-cli
 
 > 基于webpack-simple模板改造，一个适合开发组件和插件的精简脚手架。
 
