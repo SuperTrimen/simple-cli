@@ -20,12 +20,12 @@ npm install -g vue-cli
 
 初始化开发脚手架：
 ``` bash
-vue init StrongSoftGitHub/Simple-Cli vue-component[或插件名称]
+vue init StrongSoftGitHub/simple-cli vue-component[或插件名称]
 ```
 
 ### 开发步骤
 
-1. `vue init StrongSoftGitHub/Simple-Cli vue-component`，初始化开发脚手架， my-component即组件名称或者插件名称（*适用范围选项，选择通用会以@strongsoft作为前缀，选择项目，则会以@端口号作为前缀*）
+1. `vue init StrongSoftGitHub/simple-cli vue-component`，初始化开发脚手架， my-component即组件名称或者插件名称（*适用范围选项，选择通用会以@strongsoft作为前缀，选择项目，则会以@端口号作为前缀*）
 2. 开发好完成后，统一在src/lib/index.js文件中导出
 3. 在src/App.vue中编写示例
 4. 编写README.md（重要）
