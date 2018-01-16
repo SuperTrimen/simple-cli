@@ -96,7 +96,13 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    overlay: true
+    overlay: true,
+    proxy: { // 代理设置
+      // '/api': {
+      //   target: 'https://other-server.example.com',
+      //   secure: false
+      // }
+    }
   },
   performance: {
     hints: false
