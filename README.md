@@ -39,6 +39,17 @@ vue init StrongSoftGitHub/simple-cli vue-component[或插件名称]
 4. 编写README.md（重要）
 3. `npm publish`，发布到npm包源
 
+### 代理设置
+
+在webpack.config.js文件中设置，如：
+devServer: {
+  proxy: {
+      '/api/**': {
+        target: 'http://47.95.14.230:9174',
+        secure: false
+      }
+  }
+}
 
 ### 组件安装使用
 
