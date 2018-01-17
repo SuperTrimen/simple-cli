@@ -82,7 +82,7 @@ module.exports = {
                 })
             })
         }
-        const msg = `   常用命令：\n\n   安装依赖：npm install\n   启动本地服务器：npm run dev\n   代码规范检测：npm run lint\n   自动修复代码规范问题：npm run fix\n   发布成npm包：npm publish`
+        const msg = `   常用命令：\n\n   安装依赖：npm install\n      代码规范检测：npm run lint\n   自动修复代码规范问题：npm run fix\n   启动本地服务器：npm run dev\n   发布成npm包：npm publish`
         const file = path.join(
             data.inPlace ? '' : data.destDirName,
             'src', 'lib', data.name + `${data.cliType==='component'?'.vue':'.js'}`
