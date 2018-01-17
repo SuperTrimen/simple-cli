@@ -23,14 +23,6 @@ npm install -g vue-cli
 vue init StrongSoftGitHub/simple-cli vue-component[或插件名称]
 ```
 
-### 常用命令
-
-- 安装依赖：npm install
-- 启动本地服务器：npm run dev
-- 代码规范检测：npm run lint
-- 自动修复代码规范问题：npm run fix
-- 发布成npm包：npm publish
-
 ### 开发步骤
 
 1. `vue init StrongSoftGitHub/simple-cli vue-component`，初始化开发脚手架， my-component即组件名称或者插件名称（*适用范围选项，选择通用会以@strongsoft作为前缀，选择项目，则会以@端口号作为前缀*）
@@ -42,6 +34,7 @@ vue init StrongSoftGitHub/simple-cli vue-component[或插件名称]
 ### 代理设置
 
 在webpack.config.js文件中设置，如：
+```js
 devServer: {
   proxy: {
       '/api/**': {
@@ -50,6 +43,7 @@ devServer: {
       }
   }
 }
+```
 
 ### 组件安装使用
 
@@ -82,3 +76,11 @@ devServer: {
      //或者传入参数对象
      Vue.use(MyPlugin,{})
      ```
+
+### 常用命令
+
+- 安装依赖：npm install
+- 启动本地服务器：npm run dev
+- 代码规范检测：npm run lint
+- 自动修复代码规范问题：npm run fix
+- 发布成npm包：npm publish
