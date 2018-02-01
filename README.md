@@ -20,12 +20,12 @@ npm install -g vue-cli
 
 初始化开发脚手架：
 ``` bash
-vue init StrongSoftGitHub/simple-cli vue-component[或插件名称]
+vue init strongzs/simple-cli vue-component[或插件名称]
 ```
 
 ### 开发步骤
 
-1. `vue init StrongSoftGitHub/simple-cli vue-component`，初始化开发脚手架， my-component即组件名称或者插件名称（*适用范围选项，选择通用会以@strongsoft作为前缀，选择项目，则会以@端口号作为前缀*）
+1. `vue init strongzs/simple-cli vue-component`，初始化开发脚手架， my-component即组件名称或者插件名称（*适用范围选项，选择通用会以@strongsoft作为前缀，选择项目，则会以@端口号作为前缀*）
 2. 开发好完成后，统一在src/lib/index.js文件中导出
 3. 在src/App.vue中编写示例
 4. 编写README.md（重要）
@@ -48,22 +48,22 @@ devServer: {
 ### 组件安装使用
 
 1. 安装
-   - 通用组件：`npm install @strongsoft/my-component --save`
-   - 项目组件：`npm install @端口号/my-component --save`
+   - 通用组件：`npm install @strongzs/my-component --save`
+   - 项目组件：`npm install @合同号/my-component --save`
 2. 使用
-   - 通用组件：`import MyComponent from '@strongsoft/my-component'`
-   - 项目组件：`import MyComponent from '@端口号/my-component'`
+   - 通用组件：`import MyComponent from '@strongzs/my-component'`
+   - 项目组件：`import MyComponent from '@合同号/my-component'`
 
 ### 插件安装使用
 
 1. 安装
-   - 通用插件：`npm install @strongsoft/my-plugin --save`
-   - 项目插件：`npm install @端口号/my-plugin --save`
+   - 通用插件：`npm install @strongzs/my-plugin --save`
+   - 项目插件：`npm install @合同号/my-plugin --save`
 2. 使用
    - 通用插件：
      ```
      import Vue from 'vue'
-     import MyPlugin from '@strongsoft/my-plugin'
+     import MyPlugin from '@strongzs/my-plugin'
      Vue.use(MyPlugin)
      //或者传入参数对象
      Vue.use(MyPlugin,{})
